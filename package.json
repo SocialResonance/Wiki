@@ -1,17 +1,20 @@
 {
   "name": "plural-wiki",
   "module": "index.ts",
-  "type": "module",
   "devDependencies": {
-    "bun-types": "latest"
-  },
-  "scripts": {
-    "dev" : "npx @11ty/eleventy --serve"
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.7",
+    "bun-types": "latest",
+    "cssnano": "^5.1.12",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+  "scripts": {
+    "dev": "npx @11ty/eleventy --serve",
+    "build": "eleventy",
+    "start": "eleventy --serve"
   }
 }
