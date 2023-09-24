@@ -17,3 +17,5 @@ https://www.technologiestiftung-berlin.de/
 https://openid.net/
 
 whatisemerging.com
+
+Collective Intelligence Project
