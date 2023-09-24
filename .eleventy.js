@@ -2,6 +2,8 @@ const tailwind = require("tailwindcss");
 const postCss = require("postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
+const fs = require('fs');
+const path = require('path');
 
 const postcssFilter = (cssCode, done) => {
   postCss([
@@ -18,9 +20,19 @@ const postcssFilter = (cssCode, done) => {
     );
 };
 
+
 module.exports = function (config) {
   config.addWatchTarget("./src/_includes/styles/tailwind.css");
   config.addNunjucksAsyncFilter("postcss", postcssFilter);
+  config.addCollection("articleCategories", function (collectionApi) {
+    const articlesPath = path.join(__dirname, 'src', 'articles');
+    const dirs = fs.readdirSync(articlesPath, { withFileTypes: true })
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => dirent.name);
+
+    return dirs;
+  });
+
   return {
     passthroughFileCopy: true,
     dir: {
