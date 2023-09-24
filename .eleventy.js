@@ -28,7 +28,10 @@ module.exports = function (config) {
     const articlesPath = path.join(__dirname, 'src', 'articles');
     const dirs = fs.readdirSync(articlesPath, { withFileTypes: true })
       .filter(dirent => dirent.isDirectory())
-      .map(dirent => dirent.name);
+      .map(dirent => {
+        const name = dirent.name;
+        return name.charAt(0).toUpperCase() + name.slice(1);
+      });
 
     return dirs;
   });
