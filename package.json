@@ -13,8 +13,7 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "dev": "npx @11ty/eleventy --serve",
-    "build": "eleventy",
-    "start": "eleventy --serve"
+    "dev": "eleventy --serve",
+    "build": "eleventy"
   }
 }
