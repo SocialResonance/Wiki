@@ -28,3 +28,5 @@ title: "Organisations"
 [World Justice Project](https://worldjusticeproject.org/)
 
 [Foundation for the Rights of Future Generations](https://www.intergenerationaljustice.org/)
+
+[Dezentrum](https://dezentrum.ch/en/)
