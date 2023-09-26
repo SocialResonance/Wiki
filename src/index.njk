@@ -1,57 +1,24 @@
 ---
 layout: layouts/base.njk
-title: Homepage
+title: Plurality Wiki
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Plurality Wiki</title>
-    <link href="/path/to/tailwind.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container mx-auto px-4">
-      <header class="text-center py-5">
-        <h1 class="text-4xl font-bold">Plurality Wiki</h1>
-      </header>
 
-      <nav>
-        <ul class="flex justify-around">
-          <li>
-            <a href="#" class="text-blue-500">Home</a>
-          </li>
-          <li>
-            <a href="#" class="text-blue-500">About</a>
-          </li>
-          <li>
-            <a href="#" class="text-blue-500">Contact</a>
-          </li>
-        </ul>
-      </nav>
+
 
       <main class="my-5">
-        <section>
-          <h2 class="text-2xl font-semibold">What is Plurality?</h2>
-          <p>{{ plurality_definition }}</p>
-        </section>
-
-        <section class="mt-5">
-
+        <section class="mt-5 text-center">
           {% for category in collections.articleCategories %}
             <a href="/articles/{{ category }}">
-              <h2 class="text-2xl font-semibold">
+              <h2 class="text-4xl font-semibold">
                 {{ category }}
               </h2>
             </a>
           {% endfor %}
-
         </section>
       </main>
-
-      <footer class="text-center py-5">
-        <p>&copy; 2023 Plurality Wiki</p>
-      </footer>
     </div>
   </body>
 </html>

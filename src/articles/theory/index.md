@@ -1,5 +1,11 @@
-https://www.martinauer.net/krieg_u_gen/Generationengerechtigkeit_und_Krieg.htm**Art:**[https://en.wikipedia.org/wiki/The_Last_Night_(video_game)](https://en.wikipedia.org/wiki/The_Last_Night_(video_game))
+---
+layout: "layouts/article.njk"
+title: "Theory"
+---
 
-https://www.meaningcrisis.co/the-introduction-to-the-meaning-crisis-series%E2%80%8B/
+[German: How does war come into the world? Conflict, cooperation and competition from the point of view of the self-organisation of systems ](https://www.martinauer.net/krieg_u_gen/Generationengerechtigkeit_und_Krieg.htm)
 
-Resonance Theory Hartmut Rosa
+
+[Introduction the the meaning crisis](https://www.meaningcrisis.co/the-introduction-to-the-meaning-crisis-series%E2%80%8B/)
+
+[Resonance Theory](https://en.wikipedia.org/wiki/Resonance_(sociology))

@@ -1,17 +1,26 @@
-Pol.is
+---
+layout: "layouts/article.njk"
+title: "Tech"
+---
 
-https://www.idena.io/
 
-https://polygon.technology/blog/introducing-polygon-id-zero-knowledge-own-your-identity-for-web3
+[Polis](Pol.is)
 
-https[://kleros.io/](https://kleros.io/)https://www.deepmind.com/blog/human-centred-mechanism-design-with-democratic-aihttps://blueskyweb.xyz/
+[Idena](https://www.idena.io/)
 
-https://egora-ilp.org/
+[Poligon-ID](https://polygon.technology/polygon-id)
 
-www.deso.com
+[kleros](https://kleros.io/)
 
-https://joshketry.substack.com/p/human-swarm-intelligence-the-most
+[Human-centred mechanism design with Democratic AI](https://www.deepmind.com/blog/human-centred-mechanism-design-with-democratic-ai)
 
+[AT Protocol](https://atproto.com/)
+
+[Egora](https://egora-ilp.org/)
+
+[Deso](www.deso.com)
+
+[Human Swarm Intelligence](https://joshketry.substack.com/p/human-swarm-intelligence-the-most)
 https://wtfispluralqf.decartography.com/
 
-Democracy OS
+[Democracy OS](https://worldjusticeproject.org/our-work/programs/democracyos)

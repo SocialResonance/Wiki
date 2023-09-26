@@ -1,21 +1,30 @@
-https://www.radicalxchange.org/
+---
+layout: "layouts/article.njk"
+title: "Organisations"
+---
 
-https://wiki.metacrisis.xyz
+[RADICALxCHANGE](https://www.radicalxchange.org/)
 
-https://www.recursivepublic.com/
+[Metacrisis Wiki](https://wiki.metacrisis.xyz)
 
-https://compdemocracy.org
+[Recursive Public](https://www.recursivepublic.com/)
 
-https://projecttogether.org
+[Computational Democracy](https://compdemocracy.org)
 
-https://www.citizenlab.co
+[Project Together](https://projecttogether.org)
 
-https://dandelion.events/
+[Citizen Lab](https://www.citizenlab.co)
 
-https://www.technologiestiftung-berlin.de/
+[Dandelion Events](https://dandelion.events/)
 
-https://openid.net/
+[Technologiestiftung Berlin](https://www.technologiestiftung-berlin.de/)
 
-whatisemerging.com
+[OpenID](https://openid.net/)
 
-Collective Intelligence Project
+[What is Emerging](whatisemerging.com)
+
+[Collective Intelligence Project](https://collectiveintelligenceproject.org/)
+
+[World Justice Project](https://worldjusticeproject.org/)
+
+[Foundation for the Rights of Future Generations](https://www.intergenerationaljustice.org/)
