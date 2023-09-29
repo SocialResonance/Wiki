@@ -1,1 +1,12 @@
-{% extends "layouts/base.njk" %}
+---
+layout: "layouts/base.njk"
+---
+
+<div class="flex justify-center items-center">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold">{{ title }}</h1>
+        <div class="text-2xl my-4">
+            {{ content | markdown | safe }}
+        </div>
+    </div>
+</div>

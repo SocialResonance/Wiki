@@ -4,6 +4,8 @@ const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
 const fs = require('fs');
 const path = require('path');
+const markdownIt = require("markdown-it");
+const uslug = require("uslug");
 
 const postcssFilter = (cssCode, done) => {
   postCss([
@@ -35,6 +37,29 @@ module.exports = function (config) {
 
     return dirs;
   });
+
+  let markdown = markdownIt({
+    html: true,
+    linkify: true,
+    typographer: true,
+  })
+    .use(require("markdown-it-anchor"), {
+      slugify: uslug,
+    })
+    .use(require("markdown-it-toc-done-right"), {
+      slugify: uslug,
+      listClass: "list-aligned",
+      listType: "ul",
+      containerClass: "toc",
+      containerId: "toc",
+      itemClass: "toc-item",
+      linkClass: "toc-link",
+    })
+    .use(require("markdown-it-footnote"));
+  markdown.renderer.rules.footnote_block_open = () => `<hr/>\n<ol>\n`;
+  markdown.renderer.rules.footnote_block_close = () => `</ol>\n`;
+  config.setLibrary("md", markdown);
+  config.addFilter("markdown", (value) => markdown.render(value));
 
   return {
     passthroughFileCopy: true,
