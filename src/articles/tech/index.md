@@ -21,6 +21,7 @@ title: "Tech"
 [Deso](www.deso.com)
 
 [Human Swarm Intelligence](https://joshketry.substack.com/p/human-swarm-intelligence-the-most)
-https://wtfispluralqf.decartography.com/
+
+[Decartography](https://wtfispluralqf.decartography.com/)
 
 [Democracy OS](https://worldjusticeproject.org/our-work/programs/democracyos)
