@@ -1,5 +1,6 @@
 ---
 layout: "layouts/article.njk"
+permalink: "articles/art/index.html"
 title: "Art"
 ---
 
