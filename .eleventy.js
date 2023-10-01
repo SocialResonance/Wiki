@@ -32,7 +32,7 @@ module.exports = function (config) {
       .filter(dirent => dirent.isDirectory())
       .map(dirent => {
         const name = dirent.name;
-        return name.charAt(0).toUpperCase() + name.slice(1);
+        return dirent.name;
       });
 
     return dirs;
