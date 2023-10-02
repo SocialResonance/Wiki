@@ -1,8 +1,8 @@
 ---
 layout: "layouts/article.njk"
-title: ""
-link: ""
-source: ""
+title: "Deso"
+link: "www.deso.com"
+source: "https://docs.deso.org/"
 ---
 
-Impact Week is a non-profit program which unites people from a variety of countries to develop sustainable business models using Design Thinking. In our "Train the Trainer"​ sessions we enable people as Design Thinking coaches. And in the actual "Impact Week"​ we help students to develop new business ideas.
+Decentralized Social is empowering an internet that’s creator-led, user owned, and open to millions of developers around the world to build off one another.
