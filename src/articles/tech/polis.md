@@ -1,8 +1,10 @@
 ---
 layout: "layouts/article.njk"
-title: ""
-link: ""
-source: ""
+title: "Polis"
+link: "https://pol.is/"
+source: "https://pol.is/home"
 ---
 
-Impact Week is a non-profit program which unites people from a variety of countries to develop sustainable business models using Design Thinking. In our "Train the Trainer"​ sessions we enable people as Design Thinking coaches. And in the actual "Impact Week"​ we help students to develop new business ideas.
+<strong>Polis is a real-time system for gathering, analyzing and understanding what large groups of people think in their own words, enabled by advanced statistics and machine learning.</strong>
+
+Polis has been used all over the world by governments, academics, independent media and citizens, and is completely open source.

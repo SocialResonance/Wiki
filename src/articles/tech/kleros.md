@@ -1,8 +1,18 @@
 ---
 layout: "layouts/article.njk"
-title: ""
-link: ""
-source: ""
+title: "Kleros"
+link: "https://kleros.io/"
+source: "https://kleros.io/about"
 ---
 
-Impact Week is a non-profit program which unites people from a variety of countries to develop sustainable business models using Design Thinking. In our "Train the Trainer"​ sessions we enable people as Design Thinking coaches. And in the actual "Impact Week"​ we help students to develop new business ideas.
+<h2>About Kleros</h2>
+
+Kleros is an open source online dispute resolution protocol which uses blockchain and crowdsourcing to fairly adjudicate disputes. Development efforts are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. All our research and code development are open source and free for anyone to use.
+
+<h2>Mission</h2>
+
+Our mission is to develop software enabling access to justice and individual freedom.
+
+<h2>Team</h2>
+
+We are a cross-discipline and international team passionate about blockchain and its potential to transform law and governance.

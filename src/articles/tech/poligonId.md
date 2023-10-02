@@ -1,8 +1,11 @@
 ---
 layout: "layouts/article.njk"
-title: ""
-link: ""
-source: ""
+title: "Poligon-ID"
+link: "https://polygon.technology/polygon-id"
+source: "https://polygon.technology/polygon-id"
 ---
 
-Impact Week is a non-profit program which unites people from a variety of countries to develop sustainable business models using Design Thinking. In our "Train the Trainer"​ sessions we enable people as Design Thinking coaches. And in the actual "Impact Week"​ we help students to develop new business ideas.
+<h2>Identity infrastructure
+for Web3</h2>
+
+Polygon ID gives you the power to build trusted and secure relationships between users and dApps, following the principles of self sovereign identity and privacy by default.
