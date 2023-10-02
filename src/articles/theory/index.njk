@@ -1,0 +1,22 @@
+---
+layout: "layouts/base.njk"
+title: "Theory"
+tags: []
+---
+
+<!DOCTYPE html>
+<html lang="en">
+      <main class="my-5">
+        <section class="mt-5 text-center">
+          {% for article in collections.theory %}
+            <a href="{{ article.permalink }}">
+              <h2 class="text-4xl font-semibold capitalize">
+                {{ article.title }}
+              </h2>
+            </a>
+          {% endfor %}
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
