@@ -1,6 +1,6 @@
 ---
 layout: "layouts/article.njk"
-title: "Foundation for the Rights of Future Generations"
+title: "Dezentrum"
 link: "https://dezentrum.ch/en/"
 source: "https://dezentrum.ch/en/who-we-are"
 ---
