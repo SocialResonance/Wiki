@@ -22,7 +22,7 @@ tags: []
 
 [OpenID](https://openid.net/)
 
-[What is Emerging](whatisemerging.com)
+[What is Emerging](http:/whatisemerging.com)
 
 [Collective Intelligence Project](https://collectiveintelligenceproject.org/)
 
