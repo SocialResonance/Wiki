@@ -5,5 +5,4 @@ link: "https://wiki.metacrisis.xyz/"
 source: "https://metacrisis.xyz/"
 ---
 
-a collective of technology experts
-exploring wise responses to the metacrisis
+A collective of technology experts exploring wise responses to the metacrisis.
