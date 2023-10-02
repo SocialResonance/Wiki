@@ -7,7 +7,9 @@ layout: "layouts/base.njk"
     <h1 class="text-4xl font-bold"><a href="{{ link }}" target="_blank" title="Click to visit the {{ title }} website" >{{ title }}</a></h1>
     <div class="max-w-2xl text-left md:text-2xl my-4">
       {{ content | markdown | safe }}
-      <p class="mt-4 text-right"><a href="{{ source }}" target="_blank" title="Click to visit the website of this source" >Source: {{ source }}</a></p>
+      {%- if (source) -%}
+      <p class="mt-4 text-right">Source: <a href="{{ source }}" target="_blank" title="Click to visit the website of this source" >{{ source }}</a></p>
+      {%- endif -%}
     </div>
   </div>
 </div>
