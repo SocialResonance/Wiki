@@ -2,6 +2,7 @@
 layout: "layouts/article.njk"
 title: "RADICALxCHANGE"
 link: "https://www.radicalxchange.org/"
+source: "https://www.radicalxchange.org/about/"
 ---
 
 RadicalxChange (RxC) is a global movement for next-generation political economies. We’re committed to advancing plurality, equality, community, and decentralization through upgrading democracy, markets, the data economy, the commons, and identity.
