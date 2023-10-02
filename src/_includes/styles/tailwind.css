@@ -19,10 +19,10 @@
         @apply mb-4;
     }
     a {
-      @apply underline relative;
+      @apply relative;
     }
     a:hover {
-        @apply no-underline;
+        @apply underline;
     }
     a[target="_blank"]:hover:after {
         content: "^";
