@@ -19,5 +19,10 @@
   "scripts": {
     "dev": "eleventy --serve",
     "build": "eleventy"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "D": "^1.0.0",
+    "js-yaml": "^4.1.0"
   }
 }

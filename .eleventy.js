@@ -1,42 +1,34 @@
-const tailwind = require("tailwindcss");
-const postCss = require("postcss");
-const autoprefixer = require("autoprefixer");
-const cssnano = require("cssnano");
-const fs = require('fs');
+
 const path = require('path');
 const markdownIt = require("markdown-it");
 const uslug = require("uslug");
-
-const postcssFilter = (cssCode, done) => {
-  postCss([
-    tailwind(require("./tailwind.config")),
-    autoprefixer(),
-    cssnano({ preset: "default" }),
-  ])
-    .process(cssCode, {
-      from: "./src/_includes/styles/tailwind.css",
-    })
-    .then(
-      (r) => done(null, r.css),
-      (e) => done(e, null)
-    );
-};
-
+const { postcssFilter, getDirectories, getMarkdownFiles, parseTitleFromMd } = require("./utils.js")
+const articlesPath = path.join(__dirname, 'src', 'articles');
+const articleCategories = getDirectories(articlesPath);
 
 module.exports = function (config) {
   config.addWatchTarget("./src/_includes/styles/tailwind.css");
   config.addNunjucksAsyncFilter("postcss", postcssFilter);
-  config.addCollection("articleCategories", function (collectionApi) {
-    const articlesPath = path.join(__dirname, 'src', 'articles');
-    const dirs = fs.readdirSync(articlesPath, { withFileTypes: true })
-      .filter(dirent => dirent.isDirectory())
-      .map(dirent => {
-        const name = dirent.name;
-        return dirent.name;
-      });
 
-    return dirs;
-  });
+  config.addCollection("articleCategories", function (collectionApi) {
+    return articleCategories
+  })
+
+
+  articleCategories.forEach((category) => {
+    let categoryArticles = []
+    const categoryPath = path.join(__dirname, 'src', 'articles', category);
+    const articleMdFiles = getMarkdownFiles(categoryPath)
+    articleMdFiles.forEach(articleMdFile => {
+      const title = parseTitleFromMd(categoryPath + "/" + articleMdFile)
+      const permalink = "/articles/" + category + "/" + articleMdFile.slice(0, -3)
+      categoryArticles.push({ title, permalink })
+    })
+    console.log('categoryArticles', categoryArticles)
+    config.addCollection(category, function (collectionApi) {
+      return categoryArticles
+    })
+  })
 
   let markdown = markdownIt({
     html: true,
